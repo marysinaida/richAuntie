@@ -11,6 +11,7 @@ import { TransactionHistoryComponent } from './components/transactions/transacti
 import { TransactionStatusComponent } from './components/transactions/transaction-status/transaction-status.component';
 import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ShopComponent } from './components/shop/shop.component';
     TransactionHistoryComponent,
     TransactionStatusComponent,
     HomeComponent,
-    ShopComponent
+    ShopComponent,
+    ScrollTopComponent
   ],
   imports: [
     BrowserModule,
