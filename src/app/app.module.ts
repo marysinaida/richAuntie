@@ -10,6 +10,7 @@ import { ProductDetailsComponent } from './components/marketplace/product-detail
 import { TransactionHistoryComponent } from './components/transactions/transaction-history/transaction-history.component';
 import { TransactionStatusComponent } from './components/transactions/transaction-status/transaction-status.component';
 import { HomeComponent } from './components/home/home.component';
+import { ShopComponent } from './components/shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './components/home/home.component';
     ProductDetailsComponent,
     TransactionHistoryComponent,
     TransactionStatusComponent,
-    HomeComponent
+    HomeComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,

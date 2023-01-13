@@ -1,0 +1,70 @@
+.shop-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .shop-filters {
+    text-align: center;
+  }
+  
+  .shop-filters form {
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  
+  .shop-filters label {
+    margin-right: 10px;
+  }
+  
+  .shop-filters select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .shop-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .shop-item {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .shop-item img {
+    width: 100%;
+  }
+  
+  .shop-item h2 {
+    margin-top: 20px;
+  }
+  
+  .shop-item .price {
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .shop-item .add-to-cart {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  
+  
