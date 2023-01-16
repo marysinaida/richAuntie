@@ -12,7 +12,7 @@ import { TransactionStatusComponent } from './components/transactions/transactio
 import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
-import { Routes } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -36,8 +36,3 @@ import { Routes } from '@angular/router';
 })
 export class AppModule { }
 
-const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'shop', component: ShopComponent },
-  { path: '', redirectTo: '', pathMatch: 'full' },
-];
