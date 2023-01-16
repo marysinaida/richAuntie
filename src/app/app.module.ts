@@ -12,6 +12,8 @@ import { TransactionStatusComponent } from './components/transactions/transactio
 import { HomeComponent } from './components/home/home.component';
 import { ShopComponent } from './components/shop/shop.component';
 import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
+import { HeaderComponent } from './commom/header/header.component';
+import { FooterComponent } from './commom/footer/footer.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top.component
     TransactionStatusComponent,
     HomeComponent,
     ShopComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,78 @@
+.navbar{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.btn-rounded{
+    border-radius: 20px;
+}
+
+#home{
+    background-image: url("/assets/images/bg-hero.webp");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+#about{
+    height: 50vh;
+    background-color: rgb(55, 0, 255);
+
+}
+#domestic{
+    height: 50vh;
+    background-color: #fff;
+
+
+}
+#commercial{
+    height: 50vh;
+    background-color: rgba(32, 4, 134, 0.76);
+
+
+}
+#quote{
+    height: 90vh;
+    
+}
+.card{
+    border: unset;
+    background-color: rgba(255, 255, 255, 0.199);
+}
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #131570;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+footer{
+    background-color: black;
+}
