@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, } from '@angular/core';
+import { Cart } from 'src/app/models/cart.model';
+import { Product } from 'src/app/models/product.model';
+import { CartService } from 'src/app/services/cart.service';
+import { ProductService } from 'src/app/services/product-api.service';
+
 
 @Component({
   selector: 'app-shop',
@@ -6,20 +11,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./shop.component.css']
 })
 export class ShopComponent {
-  products = [
-    {name: 'Product 1', description: 'This is product 1'},
-    {name: 'Product 2', description: 'This is product 2'},
-    {name: 'Product 3', description: 'This is product 3'}
-  ];
+  products: any;
 
-  addToCart(product: { name: any; }) {
-    console.log(`${product.name} has been added to the cart.`);
+  
+  constructor(private productService: ProductService, private cartService: CartService) { }
+
+
+  allProducts = this.productService.getProducts();
+
+  addToCart(product: Product, quantity: number) {
+    console.log(product)
+    this.cartService.addProductToCart({
+      product,
+      quantity,
+      buyerId: "1"
+      
+    });
   }
+
 }
 
 
 
 
-  
 
-  
+
+
+
+
+
+
+
+

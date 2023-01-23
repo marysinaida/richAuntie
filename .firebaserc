@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "richauntie-cleaning-service": {
+      "hosting": {
+        "maryE-commerce": [
+          "richauntie-cleaning-service"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "richauntie-cleaning-service"
+  }
+}

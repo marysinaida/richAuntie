@@ -95,6 +95,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "maryE-commerce:build:production",
+            "firebaseProject": "richauntie-cleaning-service",
+            "firebaseHostingSite": "richauntie-cleaning-service"
+          }
         }
       }
     }
