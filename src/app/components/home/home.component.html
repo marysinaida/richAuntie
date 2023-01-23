@@ -46,7 +46,7 @@
                 <p>
 The RichAuntie Domestic Cleaning Services provides a full and thorough ‘top to bottom’ clean. During our initial ‘walk through’ consultation we will visit your property and review and listen to your requirements to ensure we maintain a consistently professional service every time. Our cleaning routines can include; vacuuming throughout, hard floor clean, kitchen surfaces and sinks, coving and skirting board cleaning, tables and chairs cleaned and or polished, bathrooms, toilets and showers cleaned throughout. All shelves and surfaces dusted and/or polished.</p>
 
-<button class="btn btn-primary btn-rounded " type="button">REQUEST AN ESTIMATE</button>
+<button class="btn btn-primary btn-rounded " type="button" [routerLink]="['/quote']">REQUEST AN ESTIMATE</button>
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@ The RichAuntie Domestic Cleaning Services provides a full and thorough ‘top to
                 <h2 style="color: white;">Commercial Cleaning</h2>
 <p style="color: white;"> RichAuntie Cleaning Services understand how important it is for your office or place of work to present a clean and professional image to your clients and customers. We will visit your office (or place of work) and tailor a cleaning package to suit your requirements. Whether you have one office, a building with multiple offices, or even an industrial unit we can provide a solution for you and your employees. We will also endeavour to create a schedule based on your ‘comings and goings’ to ensure we cause the least disruption to your working day.</p>
 
-<button class="btn btn-primary btn-rounded " type="button">REQUEST AN ESTIMATE</button>
+<button class="btn btn-primary btn-rounded " type="button" [routerLink]="['/quote']">REQUEST AN ESTIMATE</button>
 
             </div>
             <div class="col">
@@ -68,33 +68,19 @@ The RichAuntie Domestic Cleaning Services provides a full and thorough ‘top to
         </div>
     </div>
 </section>
-<section id="quote">
+<section id="quote" [routerLink]="['/quote']">
     <div class="container">
         <div class="row align-items-center" style="height: 90vh;">
             <div class="col">
                 <img src="assets/images/about2.jpg" alt="" height="400px">
             </div>
             <div class="col">
-                <form style="width: 60vh;">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                <h1>Contact Us</h1> 
+                <p>Thank you for considering our cleaning services. We would love to hear from you and answer any questions you may have.
+                If you would like to request a quote or schedule a cleaning, please fill out the form on our by clicking the button belowwwwwwww.
+                We look forward to hearing from you and serving all of your cleaning needs.</p>  
                     <br>
-                    <label for="name">Tel:</label>
-                    <input type="number" id="tel" name="tel" required>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <label for="name">Enquiring type:</label>
-                    <input type="text" id="name" name="name" required>
-                    <br>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <br>
-                    <input type="submit" value="Submit">
-                  </form>
-                
-            </div>
+                    <input type="submit" value="Submit"></div>
         </div>
     </div>
 </section>
