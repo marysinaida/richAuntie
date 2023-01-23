@@ -2,27 +2,32 @@
   <div class="row min-vh-100 align-items-center">
     <div class="col-md-6">
 
-      <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
+      <form 
+      action="https://formspree.io/f/xpzewnbk"
+      method="POST"
+      >
 
         <div class="form-group mb-3">
           <label for="name">Name:</label>
-          <input type="text" id="name" class="form-control" formControlName="name">
+          <input type="text" id="name" class="form-control" name="name">
         </div>
 
         <div class="form-group mb-3">
           <label for="email">Email:</label>
-          <input type="email" class="form-control" id="email" formControlName="email">
+          <input type="email" class="form-control" id="email" name="email">
         </div>
 
         <div class="form-group mb-5">
           <label for="message">Message:</label>
-          <textarea id="message" class="form-control" formControlName="message"></textarea>
+          <textarea id="message" class="form-control" name="message"></textarea>
         </div>
 
-        <button class="btn btn-primary btn-rounded" type="submit" [disabled]="!quoteForm.valid">
+        <button class="btn btn-primary btn-rounded" type="submit" >
           REQUEST AN ESTIMATE
         </button>
       </form>
+
+
 
     </div>
     <div class="col">
