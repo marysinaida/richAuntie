@@ -22,6 +22,8 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { CartComponent } from './components/cart/cart.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CartCheckoutComponent } from './components/cart-checkout/cart-checkout.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,15 @@ import { CartComponent } from './components/cart/cart.component';
     HeaderComponent,
     FooterComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    CartCheckoutComponent
   ],
   
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),

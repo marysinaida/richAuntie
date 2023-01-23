@@ -6,6 +6,9 @@ import { Product } from '../models/product.model';
   providedIn: 'root'
 })
 export class CartService {
+  checkoutFromCart(product: Product, quantity: number) {
+    throw new Error('Method not implemented.');
+  }
   cartService: any;
   removeFromCart(product: Product, quantity: number) {
     this.cartService.removeFromCart(product, quantity);

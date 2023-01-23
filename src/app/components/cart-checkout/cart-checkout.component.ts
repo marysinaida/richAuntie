@@ -4,18 +4,12 @@ import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product-api.service';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
-  
+  selector: 'app-cart-checkout',
+  templateUrl: './cart-checkout.component.html',
+  styleUrls: ['./cart-checkout.component.css']
 })
-export class CartComponent {
-checkoutFromCart(_t5: Product,arg1: any) {
-throw new Error('Method not implemented.');
-}
-Number(arg0: any): number {
-throw new Error('Method not implemented.');
-}
+export class CartCheckoutComponent {
+
   quantity = 1;
   product: any;
 
@@ -23,30 +17,9 @@ throw new Error('Method not implemented.');
 
   allProducts = this.productService.getProducts();
 
-  removeFromCart(product: Product, quantity: number) {
+  checkoutFromCart(product: Product, quantity: number) {
     console.log(product)
-    this.cartService.removeFromCart(product,quantity);
+    this.cartService.checkoutFromCart(product,quantity);
 }
 }
-
-
-
-  
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

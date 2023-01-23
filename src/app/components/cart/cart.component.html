@@ -8,6 +8,7 @@
             <p class="card-text">{{ product.description }}</p>
             <p class="card-text"><strong>Price:</strong> {{ product.price }}</p>
             <button class="btn btn-danger" (click)="removeFromCart(product, 1)">Remove from Cart</button>
+            <button class="btn btn-primary" (click)="checkoutFromCart(product,1)" [routerLink]="['/checkout']" routerLinkActive="router-link-active" >Checkout </button>
           </div>
         </div>
       </div>
